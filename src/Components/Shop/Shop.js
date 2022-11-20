@@ -1,11 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import css from './shop.css'
 import PDetails from './../ProductDetails/PDetails';
 
 const Shop = (props) => {
     const{id, title, image, description, price, rating} = props.product;
-    console.log(props);
     return (
         <div className='mainBody'>
             <img className='productImage' src={image} alt="" />

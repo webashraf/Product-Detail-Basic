@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams} from 'react-router-dom';
 import {useEffect, useState} from 'react';
+import css from './detail.css'
 
 const PDetails = () => {
     const {pId} = useParams();
@@ -12,7 +13,7 @@ const PDetails = () => {
     },[])
     const{id, title, image, description, price, rating} = product;
     return (
-        <div style={{margin: 'auto', padding: '80px', textAlign: 'center'}}>
+        <div className='detailParent'>
             <img style={{width: '200px'}} src={image} alt="" />
             <h1>{title}</h1>
             <p>{description}</p>
